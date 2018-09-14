@@ -37,4 +37,3 @@ test('The first course should have the property of Title', () => {
 test('The first course should have a view number of "31,266"', () => {
   expect(data[0]).toHaveProperty('views', '31,266');
 });
-
