@@ -1,6 +1,20 @@
-import React from 'react';
+// @flow
+import React from 'react'
 
-const Single = ({item}) => (
+type Item = {
+  item: {
+    id: number,
+    title: string,
+    category: string,
+    description: string,
+    link: string,
+    release_date: string,
+    views: string,
+    image: string
+  }
+}
+
+const Single = ({ item }): Item => (
   <li className="col l6 s12">
     <div className="card">
       <div className="card-image">
@@ -28,6 +42,6 @@ const Single = ({item}) => (
     </div>
     <br />
   </li>
-);
+)
 
-export default Single;
+export default Single
